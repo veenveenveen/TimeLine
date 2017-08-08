@@ -11,7 +11,15 @@
 		E29A9AE11F385E5F00009AFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9AE01F385E5F00009AFB /* ViewController.swift */; };
 		E29A9AE41F385E5F00009AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A9AE21F385E5F00009AFB /* Main.storyboard */; };
 		E29A9AE61F385E5F00009AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29A9AE51F385E5F00009AFB /* Assets.xcassets */; };
-		E29A9AE91F385E5F00009AFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A9AE71F385E5F00009AFB /* LaunchScreen.storyboard */; };
+		E29A9AF21F38738500009AFB /* TimeLineModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E29A9AF01F38738500009AFB /* TimeLineModel.xcdatamodeld */; };
+		E29A9B221F39401000009AFB /* TimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B211F39401000009AFB /* TimeLineCell.swift */; };
+		E29A9B241F39407000009AFB /* TimeLineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B231F39407000009AFB /* TimeLineLayout.swift */; };
+		E29A9B261F39409D00009AFB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B251F39409D00009AFB /* Common.swift */; };
+		E29A9B281F39410B00009AFB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B271F39410B00009AFB /* Utility.swift */; };
+		E29A9B2A1F39919800009AFB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A9B291F39919800009AFB /* Launch Screen.storyboard */; };
+		E29A9B2C1F39927100009AFB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B2B1F39927100009AFB /* CoreDataManager.swift */; };
+		E29A9B2E1F39996900009AFB /* NewTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B2D1F39996900009AFB /* NewTimeLineViewController.swift */; };
+		E29A9B301F39AC0E00009AFB /* TimeLineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B2F1F39AC0E00009AFB /* TimeLineModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +28,16 @@
 		E29A9AE01F385E5F00009AFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E29A9AE31F385E5F00009AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E29A9AE51F385E5F00009AFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E29A9AE81F385E5F00009AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29A9AEA1F385E5F00009AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29A9AF11F38738500009AFB /* TimeLineModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeLineModel.xcdatamodel; sourceTree = "<group>"; };
+		E29A9B211F39401000009AFB /* TimeLineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineCell.swift; sourceTree = "<group>"; };
+		E29A9B231F39407000009AFB /* TimeLineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineLayout.swift; sourceTree = "<group>"; };
+		E29A9B251F39409D00009AFB /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		E29A9B271F39410B00009AFB /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		E29A9B291F39919800009AFB /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E29A9B2B1F39927100009AFB /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E29A9B2D1F39996900009AFB /* NewTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTimeLineViewController.swift; sourceTree = "<group>"; };
+		E29A9B2F1F39AC0E00009AFB /* TimeLineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +72,28 @@
 			children = (
 				E29A9ADE1F385E5F00009AFB /* AppDelegate.swift */,
 				E29A9AE01F385E5F00009AFB /* ViewController.swift */,
+				E29A9B2D1F39996900009AFB /* NewTimeLineViewController.swift */,
+				E29A9B211F39401000009AFB /* TimeLineCell.swift */,
+				E29A9B231F39407000009AFB /* TimeLineLayout.swift */,
+				E29A9B251F39409D00009AFB /* Common.swift */,
+				E29A9B271F39410B00009AFB /* Utility.swift */,
+				E29A9AF91F38753000009AFB /* CoreData */,
 				E29A9AE21F385E5F00009AFB /* Main.storyboard */,
+				E29A9B291F39919800009AFB /* Launch Screen.storyboard */,
 				E29A9AE51F385E5F00009AFB /* Assets.xcassets */,
-				E29A9AE71F385E5F00009AFB /* LaunchScreen.storyboard */,
 				E29A9AEA1F385E5F00009AFB /* Info.plist */,
 			);
 			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		E29A9AF91F38753000009AFB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E29A9AF01F38738500009AFB /* TimeLineModel.xcdatamodeld */,
+				E29A9B2B1F39927100009AFB /* CoreDataManager.swift */,
+				E29A9B2F1F39AC0E00009AFB /* TimeLineModel.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E29A9AE91F385E5F00009AFB /* LaunchScreen.storyboard in Resources */,
+				E29A9B2A1F39919800009AFB /* Launch Screen.storyboard in Resources */,
 				E29A9AE61F385E5F00009AFB /* Assets.xcassets in Resources */,
 				E29A9AE41F385E5F00009AFB /* Main.storyboard in Resources */,
 			);
@@ -137,8 +169,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29A9AF21F38738500009AFB /* TimeLineModel.xcdatamodeld in Sources */,
 				E29A9AE11F385E5F00009AFB /* ViewController.swift in Sources */,
+				E29A9B2E1F39996900009AFB /* NewTimeLineViewController.swift in Sources */,
+				E29A9B241F39407000009AFB /* TimeLineLayout.swift in Sources */,
+				E29A9B301F39AC0E00009AFB /* TimeLineModel.swift in Sources */,
+				E29A9B281F39410B00009AFB /* Utility.swift in Sources */,
+				E29A9B221F39401000009AFB /* TimeLineCell.swift in Sources */,
+				E29A9B2C1F39927100009AFB /* CoreDataManager.swift in Sources */,
 				E29A9ADF1F385E5F00009AFB /* AppDelegate.swift in Sources */,
+				E29A9B261F39409D00009AFB /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +191,6 @@
 				E29A9AE31F385E5F00009AFB /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E29A9AE71F385E5F00009AFB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E29A9AE81F385E5F00009AFB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,6 +336,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E29A9AF01F38738500009AFB /* TimeLineModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E29A9AF11F38738500009AFB /* TimeLineModel.xcdatamodel */,
+			);
+			currentVersion = E29A9AF11F38738500009AFB /* TimeLineModel.xcdatamodel */;
+			path = TimeLineModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E29A9AD31F385E5F00009AFB /* Project object */;
 }
