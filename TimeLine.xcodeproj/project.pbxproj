@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22BCC3D1F3AE5C500054025 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BCC3C1F3AE5C500054025 /* CoreDataManager.swift */; };
 		E29A9ADF1F385E5F00009AFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9ADE1F385E5F00009AFB /* AppDelegate.swift */; };
 		E29A9AE11F385E5F00009AFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9AE01F385E5F00009AFB /* ViewController.swift */; };
 		E29A9AE41F385E5F00009AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A9AE21F385E5F00009AFB /* Main.storyboard */; };
@@ -17,12 +18,11 @@
 		E29A9B261F39409D00009AFB /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B251F39409D00009AFB /* Common.swift */; };
 		E29A9B281F39410B00009AFB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B271F39410B00009AFB /* Utility.swift */; };
 		E29A9B2A1F39919800009AFB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A9B291F39919800009AFB /* Launch Screen.storyboard */; };
-		E29A9B2C1F39927100009AFB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B2B1F39927100009AFB /* CoreDataManager.swift */; };
 		E29A9B2E1F39996900009AFB /* NewTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B2D1F39996900009AFB /* NewTimeLineViewController.swift */; };
-		E29A9B301F39AC0E00009AFB /* TimeLineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9B2F1F39AC0E00009AFB /* TimeLineModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E22BCC3C1F3AE5C500054025 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		E29A9ADB1F385E5F00009AFB /* TimeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29A9ADE1F385E5F00009AFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29A9AE01F385E5F00009AFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +35,7 @@
 		E29A9B251F39409D00009AFB /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E29A9B271F39410B00009AFB /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		E29A9B291F39919800009AFB /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
-		E29A9B2B1F39927100009AFB /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		E29A9B2D1F39996900009AFB /* NewTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTimeLineViewController.swift; sourceTree = "<group>"; };
-		E29A9B2F1F39AC0E00009AFB /* TimeLineModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				E29A9AF01F38738500009AFB /* TimeLineModel.xcdatamodeld */,
-				E29A9B2B1F39927100009AFB /* CoreDataManager.swift */,
-				E29A9B2F1F39AC0E00009AFB /* TimeLineModel.swift */,
+				E22BCC3C1F3AE5C500054025 /* CoreDataManager.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -173,10 +170,9 @@
 				E29A9AE11F385E5F00009AFB /* ViewController.swift in Sources */,
 				E29A9B2E1F39996900009AFB /* NewTimeLineViewController.swift in Sources */,
 				E29A9B241F39407000009AFB /* TimeLineLayout.swift in Sources */,
-				E29A9B301F39AC0E00009AFB /* TimeLineModel.swift in Sources */,
 				E29A9B281F39410B00009AFB /* Utility.swift in Sources */,
 				E29A9B221F39401000009AFB /* TimeLineCell.swift in Sources */,
-				E29A9B2C1F39927100009AFB /* CoreDataManager.swift in Sources */,
+				E22BCC3D1F3AE5C500054025 /* CoreDataManager.swift in Sources */,
 				E29A9ADF1F385E5F00009AFB /* AppDelegate.swift in Sources */,
 				E29A9B261F39409D00009AFB /* Common.swift in Sources */,
 			);
@@ -334,6 +330,7 @@
 				E29A9AEF1F385E5F00009AFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

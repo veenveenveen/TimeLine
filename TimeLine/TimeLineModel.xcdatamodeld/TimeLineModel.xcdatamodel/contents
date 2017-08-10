@@ -2,10 +2,9 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="TimeLineItem" representedClassName="TimeLineItem" syncable="YES" codeGenerationType="class">
         <attribute name="contentText" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="sectionName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="timeText" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TimeLineItem" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="TimeLineItem" positionX="-63" positionY="-18" width="128" height="75"/>
     </elements>
 </model>

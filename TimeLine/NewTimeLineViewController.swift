@@ -55,45 +55,16 @@ class NewTimeLineViewController: UIViewController {
     func doSave() {
         print("save")
         
-//        textView?.resignFirstResponder()
-        
-        _ = navigationController?.popViewController(animated: true)
+        textView?.resignFirstResponder()
         
         let text = textView.text != nil ? textView.text : ""
-        let newItem = TimeLineModel(timeText: Date.currentDate(), contentText: text!)
+        let newItem = CoreDataManager.shareManger.insertNewItem(contentText: text!)
+        
+        _ = navigationController?.popViewController(animated: true)
         
         let vc = navigationController?.viewControllers[0] as! ViewController
         vc.sourceArray.append(newItem)
         vc.animationDisplay()
-//        let lastIndexPath = NSIndexPath(row: (vc.sourceArray.count - 1), section: 0) as IndexPath
-//        vc.tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
-//        .sourceArray.append(newItem)
-//        .animationDisplay()
-        
-        
-//        CoreDataManager.shareManager.addNewItem(timeText: Date.currentDate(), contentText: "this is a test")
-        
-//        //执行保存操作
-//        //写入数据
-//        var titleName = "新Note(无内容)"
-//        if (textView?.text.characters.count)! < showTextCount {
-//            if (textView?.text.characters.count)! > 0 {
-//                titleName = (textView?.text)!
-//            }
-//        }
-//        else {
-//            let index = textView?.text.index((textView?.text.startIndex)!, offsetBy: showTextCount)
-//            titleName = (textView?.text.substring(to: index!))!
-//        }
-        
-        //        let str = NSMutableAttributedString(attributedString: (textView?.attributedText)!)
-        //        let textAttachment = NSTextAttachment(data: nil, ofType: nil)
-        //        textAttachment.image = UIImage(named: "img.png")
-        //        let textAttachmentString = NSAttributedString(attachment: textAttachment)
-        //        str.insert(textAttachmentString, at: 0)
-        //        textView?.attributedText = str
-        
-//        CoreDataManager.shareManager.addNewItem(title: titleName, details: (textView?.text)!)
     }
 
 }

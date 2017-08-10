@@ -40,3 +40,21 @@ extension Date {
         return dateString
     }
 }
+
+//private var xoTag = false
+extension TimeLineItem {
+//    convenience init(timeText: String, contentText: String) {
+//        self.init()
+//        self.timeText = timeText
+//        self.contentText = contentText
+//    }
+    
+//    var iscellAlreadyLoad: Bool {
+//        get {
+//            return (objc_getAssociatedObject(self, &xoTag) as? Bool)!
+//        }
+//        set(newValue) {
+//            objc_setAssociatedObject(self, &xoTag, newValue, objc_AssociationPolicy(OBJC_ASSOCIATION_RETAIN))
+//        }
+//    }
+}

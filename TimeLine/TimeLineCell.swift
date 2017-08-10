@@ -44,21 +44,20 @@ class TimeLineCell: UITableViewCell {
         contentLabel.frame = timeLineLayout.contentLabelRect
         
         //动画
-        if timeLineLayout.model.iscellAlreadyLoad {
+        if timeLineLayout.iscellAlreadyLoad {
             lineLayer.path = animationPath()
         }
         else {
             animationLayer()
         }
-        
     }
     
     func configurationCell(layout: TimeLineLayout) {
         self.timeLineLayout = layout
         
-        timeLabel.text = layout.model.timeText
+        timeLabel.text = layout.item.timeText
         timeLabel.font = layout.timeLabelFont
-        contentLabel.text = layout.model.contentText
+        contentLabel.text = layout.item.contentText
         contentLabel.font = layout.contentLabelFont
     }
     

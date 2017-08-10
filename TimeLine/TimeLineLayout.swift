@@ -22,16 +22,18 @@ class TimeLineLayout: NSObject {
     var linePositionX: CGFloat = 0
     var totalHeight: CGFloat = 0
     
-    var model: TimeLineModel
+    var item: TimeLineItem
     
-    init(model: TimeLineModel) {
-        self.model = model
+    var iscellAlreadyLoad = false
+    
+    init(item: TimeLineItem) {
+        self.item = item
         super.init()
         
-        layoutWith(model: model)
+        layoutWith(item: item)
     }
     
-    fileprivate func layoutWith(model: TimeLineModel) {
+    fileprivate func layoutWith(item: TimeLineItem) {
         let timeLabelWidth: CGFloat = 60.0
         let timeLabelHeight: CGFloat = 20.0
         
@@ -39,7 +41,7 @@ class TimeLineLayout: NSObject {
         
         let contentLabelOriginX = timeLabelWidth + horizontalDistance * 2
         let contentLabelWidth = screenWidth - timeLabelWidth - horizontalDistance * 3
-        let contentLabelHeight = model.contentText.heightWithConstraintWidth(contentLabelWidth, font: timeLabelFont) + 10
+        let contentLabelHeight = item.contentText!.heightWithConstraintWidth(contentLabelWidth, font: timeLabelFont) + 10
         
         contentLabelRect = CGRect(x: contentLabelOriginX, y: verticalDistance, width: contentLabelWidth, height: contentLabelHeight)
         
