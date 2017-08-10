@@ -24,6 +24,7 @@ class TimeLineLayout: NSObject {
     
     var item: TimeLineItem
     
+    ///
     var iscellAlreadyLoad = false
     
     init(item: TimeLineItem) {

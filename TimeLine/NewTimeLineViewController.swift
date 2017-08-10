@@ -64,7 +64,9 @@ class NewTimeLineViewController: UIViewController {
         
         let vc = navigationController?.viewControllers[0] as! ViewController
         vc.sourceArray.append(newItem)
-        vc.animationDisplay()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { 
+            vc.animationDisplay()
+        }
     }
 
 }

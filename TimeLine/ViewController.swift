@@ -49,7 +49,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewTimeLineButtonClick))
         
         //清空按钮
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(deleteAllTimeLineButtonClick))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "清除所有", style: .plain, target: self, action: #selector(deleteAllTimeLineButtonClick))
         
         print(Date.currentDate())
 
@@ -62,7 +62,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        
+    
+    ///setup TableView
     fileprivate func setupTableView() {
         tableView = UITableView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
             , style: .plain)
@@ -75,12 +76,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         view.addSubview(tableView)
     }
     
+    //MARK: - tableview 动画
+    
     func animationDisplay() {
         
         if layoutArr.count >= sourceArray.count {
             return
         }
-        
         
         let item = sourceArray[layoutArr.count]
         
@@ -103,9 +105,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    //MARK: - navigationItem button
+    
     @objc fileprivate func deleteAllTimeLineButtonClick() {
         
-        print("delete click")
+        print("delete all")
         
         sourceArray.removeAll()
         layoutArr.removeAll()
